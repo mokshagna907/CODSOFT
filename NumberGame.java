@@ -1,0 +1,1 @@
+import java.util.*; public class NumberGame{public static void run(){Scanner s=new Scanner(System.in);int n=new Random().nextInt(100)+1,a=0;while(a<7){System.out.print("Guess: ");int g=s.nextInt();a++;if(g==n){System.out.println("Correct");return;}System.out.println(g<n?"Too Low":"Too High");}System.out.println("Number:"+n);}}

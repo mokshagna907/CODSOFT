@@ -1,0 +1,1 @@
+import java.util.*; public class CurrencyConverter{public static void run(){Scanner s=new Scanner(System.in);System.out.print("INR: ");double in=s.nextDouble();double usd=in/86.0;System.out.println("USD="+usd+" (static rate demo)");}}

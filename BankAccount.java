@@ -1,0 +1,1 @@
+public class BankAccount{double bal=1000;void dep(double a){bal+=a;}boolean wd(double a){if(a<=bal){bal-=a;return true;}return false;}double get(){return bal;}}

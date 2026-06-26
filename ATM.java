@@ -1,0 +1,1 @@
+import java.util.*; public class ATM{public static void run(){Scanner s=new Scanner(System.in);BankAccount b=new BankAccount();while(true){System.out.println("1.Balance 2.Deposit 3.Withdraw 4.Exit");int c=s.nextInt();if(c==1)System.out.println(b.get());else if(c==2){b.dep(s.nextDouble());}else if(c==3){System.out.println(b.wd(s.nextDouble())?"Done":"Insufficient");}else break;}}}

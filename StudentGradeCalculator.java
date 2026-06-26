@@ -1,0 +1,1 @@
+import java.util.*; public class StudentGradeCalculator{public static void run(){Scanner s=new Scanner(System.in);System.out.print("Subjects: ");int n=s.nextInt();int t=0;for(int i=1;i<=n;i++){System.out.print("Marks "+i+": ");t+=s.nextInt();}double avg=(double)t/n;char g=avg>=90?'A':avg>=80?'B':avg>=70?'C':avg>=60?'D':'F';System.out.println("Total="+t+" Avg="+avg+" Grade="+g);}}

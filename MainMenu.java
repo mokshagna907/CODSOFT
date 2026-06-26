@@ -1,1 +1,59 @@
-import java.util.*; public class MainMenu{public static void main(String[]a){Scanner s=new Scanner(System.in);while(true){System.out.println("1.Number Game\n2.Grade Calculator\n3.ATM\n4.Currency Converter\n5.Student Management\n6.Exit");int c=s.nextInt();switch(c){case 1:NumberGame.run();break;case 2:StudentGradeCalculator.run();break;case 3:ATM.run();break;case 4:CurrencyConverter.run();break;case 5:StudentManagementSystem.run();break;default:return;}}}}
+import java.util.Scanner;
+
+public class MainMenu {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        while (true) {
+
+            System.out.println("\n========================================");
+            System.out.println("      CODSOFT JAVA DEVELOPMENT");
+            System.out.println("========================================");
+            System.out.println("1. Number Game");
+            System.out.println("2. Student Grade Calculator");
+            System.out.println("3. ATM Interface");
+            System.out.println("4. Currency Converter");
+            System.out.println("5. Student Management System");
+            System.out.println("6. Exit");
+            System.out.print("\nEnter your choice: ");
+
+            int choice = sc.nextInt();
+
+            switch (choice) {
+
+                case 1:
+                    NumberGame.startGame();
+                    break;
+
+                case 2:
+                    StudentGradeCalculator.start();
+                    break;
+
+                case 3:
+                    ATMInterface.start();
+                    break;
+
+                case 4:
+                    CurrencyConverter.start();
+                    break;
+
+                case 5:
+                    StudentManagementSystem.start();
+                    break;
+
+                case 6:
+                    System.out.println("Thank you!");
+                    System.exit(0);
+
+                default:
+                    System.out.println("Invalid Choice!");
+
+            }
+
+        }
+
+    }
+
+}
